@@ -1,10 +1,11 @@
 #################################################################################
 #
-#  Filename: Plot1.R
-#   Version: 1.0.0
-#      Date: 2015.09.09
+#  Filename: plot1.R
+#   Version: 1.0.1
+#      Date: 2015.09.12
 #    Author: Mariusz Musiał
 # Rev. Info: 1.0.0 - initial version of the script
+#            1.0.1 - changed filenames to lower case
 #
 # This script generates a histogram of Global Active Power from the data of
 # Individual household electric power consumption Data Set available from
@@ -12,9 +13,9 @@
 # https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 #
 #         Input: household_power_consumption.txt 
-#        Output: Plot1.png file
+#        Output: plot1.png file
 #     Execution: run this script from your current working directory using 
-#                source("Plot1.R")
+#                source("plot1.R")
 # Prerequisites: 1) this script is located in your current working directory
 #                2) Input file is located in the current working directory
 #                3) input file is ordered by date and time, ascending
@@ -29,7 +30,7 @@ startDateString <- "1/2/2007"
 endDateString <- "3/2/2007"     # one day past the end date to analyze
 
 fname <- "household_power_consumption.txt"
-pfname <- "Plot1.png"
+pfname <- "plot1.png"
 
      # Data reading.
      # Only the required time frame is read. To do this, first we calculate how many
